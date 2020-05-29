@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "PBR_VERSION=${PKG_VERSION} && export PBR_VERSION && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
@@ -24,19 +24,19 @@ requirements:
   run:
     - python >=3.5
     - joblib
-    - scikit-learn
+    - scikit-learn <=0.22.1
     - networkx
     - xgboost
     - pandas
     - zlib
     - requests
     - rdkit
-    - tensorflow =1.14.0
 
 test:
+  requires:
+    - tensorflow =1.14.0
   imports:
     - deepchem
-
   commands:
     - python run_test.py
 

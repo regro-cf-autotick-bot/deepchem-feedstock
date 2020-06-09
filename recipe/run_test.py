@@ -26,14 +26,6 @@ class TestDeepchemBuild(unittest.TestCase):
     import rdkit
     print(rdkit.__version__)
 
-  def test_numpy_import(self):
-    import numpy as np
-    print(np.__version__)
-
-  def test_pandas_import(self):
-    import pandas as pd
-    print(pd.__version__)
-
   def get_dataset(self,
                   mode='classification',
                   featurizer='GraphConv',

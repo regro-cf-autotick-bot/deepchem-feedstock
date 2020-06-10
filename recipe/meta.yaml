@@ -23,8 +23,12 @@ requirements:
 
   run:
     - python >=3.5
+    - joblib
+    - numpy
     - pandas
+    - pillow # pillow will remove from v2.4.0
     - scikit-learn <=0.22.1
+    - scipy
 
 test:
   requires:

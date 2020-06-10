@@ -25,15 +25,11 @@ requirements:
     - python >=3.5
     - pandas
     - scikit-learn <=0.22.1
-    - mdtraj
-    - networkx
-    - openmm
-    - pdbfixer
-    - rdkit
 
 test:
   requires:
-    - tensorflow =1.14.0
+    - tensorflow =1.14
+    - rdkit
   imports:
     - deepchem
   commands:

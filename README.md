@@ -5,11 +5,9 @@ Home: https://github.com/deepchem/deepchem
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepchem-feedstock/blob/master/LICENSE.txt)
 
 Summary: Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology
-
-
 
 Current build status
 ====================

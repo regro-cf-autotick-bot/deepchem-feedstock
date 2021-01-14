@@ -23,7 +23,6 @@ requirements:
 
   run:
     - python >=3.5,<3.8
-    - pip
     - joblib
     - numpy
     - pandas
@@ -32,7 +31,6 @@ requirements:
 
 test:
   requires:
-    - tensorflow
     - rdkit
   imports:
     - deepchem

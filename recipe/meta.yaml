@@ -16,23 +16,22 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.5,<3.8
     - pip
     - setuptools
     - pbr
 
   run:
-    - python >=3.5
+    - python >=3.5,<3.8
     - joblib
     - numpy
     - pandas
-    - pillow # pillow will remove from v2.4.0
-    - scikit-learn <=0.22.1
+    - scikit-learn
     - scipy
 
 test:
   requires:
-    - tensorflow =1.14
+    - tensorflow>=2.3,<2.4
     - rdkit
   imports:
     - deepchem

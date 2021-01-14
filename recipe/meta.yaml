@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - python >=3.5,<3.8
-    - pip==20.2.*
+    - pip ==20.2.*
     - setuptools
     - pbr
 
   run:
     - python >=3.5,<3.8
+    - pip ==20.2.*
     - joblib
     - numpy
     - pandas

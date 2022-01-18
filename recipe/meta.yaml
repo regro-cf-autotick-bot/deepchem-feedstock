@@ -1,5 +1,5 @@
 {% set name = "deepchem" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepchem/deepchem/archive/{{ version }}.tar.gz
-  sha256: 2463a02773d6260e48bd4957616ebb3bc49562e1f18f8f6cbde74bf082ede0e6
+  sha256: ec0dacaa6112795f6a2a19ef78a391fa83e419d4394497e9e5c62105b9aeee1d
 
 build:
   noarch: python
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.5,<3.8
+    - python >=3.7,<3.10
     - pip
     - setuptools
     - pbr
 
   run:
-    - python >=3.5,<3.8
+    - python >=3.7,<3.10
     - joblib
     - numpy
     - pandas

@@ -1,5 +1,5 @@
 {% set name = "deepchem" %}
-{% set version = "2.6.1" %}
+{% set version = "2.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepchem/deepchem/archive/{{ version }}.tar.gz
-  sha256: e044363f41566ee8bb8738f31955b9552117c3f50305822eb69b1398c3a68600
+  sha256: d8bedd33c271b3233e61220ba5ebddaabeb9e301d6be9eef3a657d8e9e409593
 
 build:
   noarch: python

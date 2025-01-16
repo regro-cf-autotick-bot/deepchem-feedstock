@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: PBR_VERSION=${PKG_VERSION} && export PBR_VERSION && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
-    - python >=3.7,<3.10
+    - python {{ python_min }}
     - pip
     - setuptools
     - pbr
 
   run:
-    - python >=3.7,<3.10
+    - python >={{ python_min }},<3.10
     - joblib
     - numpy
     - pandas
@@ -32,6 +32,7 @@ requirements:
 test:
   requires:
     - rdkit
+    - python {{ python_min }}
   imports:
     - deepchem
   commands:
